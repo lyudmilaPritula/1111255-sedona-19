@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Людмила Притула](https://up.htmlacademy.ru/adaptive/19/user/1111255).
-* Наставник: `Неизвестно`.
+* Наставник: [Юрий Головин](https://htmlacademy.ru/profile/id520167).
 
 ---
 
