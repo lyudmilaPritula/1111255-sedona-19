@@ -1,16 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
-@import "main-nav.less";
-@import "first-header.less";
-@import "definition.less";
-@import "advantages.less";
-@import "option.less";
-@import "page-footer.less";
-@import "card.less";
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap");
+@import "blocks/main-nav.less";
+@import "blocks/first-header.less";
+@import "blocks/definition.less";
+@import "blocks/advantages.less";
+@import "blocks/option.less";
+@import "blocks/page-footer.less";
+@import "blocks/card.less";
 
 body {
-background-color: #ffffff;
-font-family: "PT Sans", "Arial", sans-serif;
-text-transform: uppercase;
+  background-color: #ffffff;
+  font-family: "PT Sans", "Arial", sans-serif;
+  text-transform: uppercase;
 }
 
 .visually-hidden {
@@ -20,9 +20,5 @@ text-transform: uppercase;
   margin: -1px;
   border: 0;
   padding: 0;
-  white-space: nowrap;
-  -webkit-clip-path: inset(100%);
-          clip-path: inset(100%);
-  clip: rect(0 0 0 0);
   overflow: hidden;
 }
