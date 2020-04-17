@@ -6,11 +6,25 @@
 @import "blocks/option.less";
 @import "blocks/page-footer.less";
 @import "blocks/card.less";
+@import "blocks/page-header.less";
+@import "blocks/@tablet-width.less";
+@import "Blocks/@desktop-width.less";
+@tablet-width: 768px;
+@desktop-width: 1200px;
+@mobile-width: 320px;
 
 body {
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
   background-color: #ffffff;
   font-family: "PT Sans", "Arial", sans-serif;
   text-transform: uppercase;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 .visually-hidden {
