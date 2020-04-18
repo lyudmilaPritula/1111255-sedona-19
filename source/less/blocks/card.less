@@ -2,6 +2,20 @@
   font-weight: bold;
 }
 
+@media (min-width: @tablet-width) {
+  .card {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .card {
+    margin: 0;
+    padding: 0;
+  }
+}
+
 .card__avtor {
   color: #333333;
   text-transform: none;
@@ -12,4 +26,93 @@
 
 .card__like {
   text-decoration: none;
+}
+
+img.desktop-img,
+img.tablet-img {
+  display: none;
+}
+
+.row1 .mobile-img,
+.card .mobile-img {
+  width: 280px;
+  display: block;
+}
+
+@media (min-width: @tablet-width) {
+  .row,
+  .row1 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 650px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+.row1-mobile,
+.row-mobile {
+  display: block;
+  width: 320px;
+}
+
+@media (min-width: @desktop-width) {
+  .row .desktop-img {
+    width: 400px;
+    margin: 0 auto;
+    display: block;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .row1 {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .tablet-img {
+    width: 650px;
+    height: 400px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .mobile-img,
+  .desktop-img {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .mobile-img,
+  .tablet-img {
+    display: none;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .row .tablet-img {
+    width: 325px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .row1 .desktop-img {
+    display: block;
+    width: 1200px;
+    height: 400px;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }

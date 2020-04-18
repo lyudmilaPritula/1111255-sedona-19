@@ -4,6 +4,24 @@
   color: #000000;
 }
 
+@media (min-width: @tablet-width) {
+  .page-footer__wrapper {
+    display: flex;
+    width: 650px;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer__wrapper {
+    display: flex;
+    width: 1035px;
+    margin: auto;
+    justify-content: space-between;
+  }
+}
+
 ul.social__list {
   min-width: 260px;
   list-style: none;

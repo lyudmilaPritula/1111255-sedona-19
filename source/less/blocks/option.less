@@ -3,13 +3,47 @@ ul.option {
   padding: 0;
 }
 
+@media (min-width: @tablet-width) {
+  .option {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .option {
+    display: flex;
+  }
+}
+
 .option__list__title {
   color: #333333;
   font-size: 21px;
   line-height: 15px;
 }
 
+@media (min-width: @tablet-width) {
+  .option__list {
+    width: 256px;
+  }
+}
+
 .list-item {
   font-size: 14px;
   line-height: 21px;
+}
+
+@media (min-width: @tablet-width) {
+  .wrapper {
+    width: 768px;
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .wrapper {
+    width: 1035px;
+    margin: 0 auto;
+  }
 }
