@@ -12,16 +12,7 @@
   button.main-nav__toggle {
     display: none;
   }
-}
 
-@media (min-width: @desktop-width) {
-  .page-header svg,
-  button.main-nav {
-    display: none;
-  }
-}
-
-@media (min-width: @tablet-width) {
   .page-header__logo {
     position: absolute;
     left: 300px;
@@ -29,6 +20,11 @@
 }
 
 @media (min-width: @desktop-width) {
+  .page-header svg,
+  button.main-nav {
+    display: none;
+  }
+
   .page-header__logo {
     position: absolute;
     left: 560px;

@@ -10,20 +10,6 @@ body {
   background-color: #81b3d2;
 }
 
-@media (min-width: @tablet-width) {
-  .main-nav__wrapper {
-    width: 696px;
-    margin: auto;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .main-nav__wrapper {
-    width: 1200px;
-    margin: auto;
-  }
-}
-
 ul.main-nav__list {
   margin: 0;
   padding: 0;
@@ -34,6 +20,11 @@ li.main-nav__list {
 }
 
 @media (min-width: @desktop-width) {
+  .main-nav__wrapper {
+    width: 1200px;
+    margin: auto;
+  }
+
   .main-nav__list {
     display: flex;
     flex-wrap: wrap;
@@ -44,6 +35,11 @@ li.main-nav__list {
 }
 
 @media (min-width: @tablet-width) {
+  .main-nav__wrapper {
+    width: 696px;
+    margin: auto;
+  }
+
   .main-nav__list {
     display: flex;
     flex-wrap: wrap;
