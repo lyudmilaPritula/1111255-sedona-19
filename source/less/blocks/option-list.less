@@ -1,43 +1,36 @@
-ul.option {
+.option-list--wrapper {
   list-style: none;
   padding: 0;
 }
 
-.option__list__title {
+.option-list__title {
   color: #333333;
   font-size: 21px;
   line-height: 15px;
 }
 
-.list-item {
+.option-list__item {
   font-size: 14px;
   line-height: 21px;
 }
 
 @media (min-width: @tablet-width) {
-  .option {
+  .option-list {
     display: flex;
     flex-wrap: wrap;
-  }
-
-  .option__list {
     width: 256px;
   }
 
-  .wrapper {
+  .option-list--wrapper {
     width: 768px;
+    display: flex;
     text-align: center;
     margin: 0 auto;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .option {
+  .option-list {
     display: flex;
-  }
-
-  .wrapper {
-    width: 1035px;
-    margin: 0 auto;
   }
 }

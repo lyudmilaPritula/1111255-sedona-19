@@ -1,142 +1,124 @@
-.advantages__list {
+.qualities-list {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
-.advantages__title h3 {
-  font-size: 21px;
-  line-height: 10px;
-  font-weight: bold;
-}
-
-.advantages__list p {
+.qualities-list__number {
   font-size: 14px;
   line-height: 21px;
 }
 
-.advantages__item--fast1,
-.advantages__item--fast3 {
+.qualities-list__item--one,
+.qualities-list__item--three {
   background-color: #81b3d2;
   color: #ffffff;
   min-height: 195px;
 }
 
-.advantages__item--fast2 {
+.qualities-list--wrapper {
+  margin: 0;
+  padding: 0;
+}
+
+.qualities-list__title {
+  font-size: 21px;
+  line-height: 10px;
+  font-weight: bold;
+}
+
+.qualities-list__item--two {
   background-image: url("../img/main-city-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 265px;
 }
 
-.advantages__item--fast4 {
+.qualities-list__item--four {
   background-image: url("../img/photo-bridge-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 260px;
 }
 
-.advantages__item--fast5,
-.advantages__item--fast6,
-.advantages__item--fast7 {
+.qualities-list__item--five,
+.qualities-list__item--six,
+.qualities-list__item--seven {
   background-color: #eeeeee;
   min-height: 267px;
   padding: 0;
   margin: 0;
 }
 
-ol.wrapper1 {
-  list-style: none;
-  padding: 0;
-}
-
 @media (min-width: @tablet-width) {
-  .advantages__item--fast1,
-  .advantages__item--fast3 {
+  .qualities-list__item--one,
+  .qualities-list__item--three {
     width: 256px;
   }
 
-  .advantages__item--fast3 {
+  .qualities-list__item--three {
     order: 2;
   }
 
-  .advantages__item--fast2 {
+  .qualities-list__item--two {
     background-image: url("../img/main-city-tablet@1x.jpg");
     background-repeat: no-repeat;
     width: 512px;
   }
 
-  .advantages__item--fast4 {
+  .qualities-list__item--four {
     background-image: url("../img/main-bridge-tablet@1x.jpg");
     background-repeat: no-repeat;
     width: 512px;
     margin: 0;
   }
 
-  .advantages__list {
+  .qualities-list--wrapper {
     display: flex;
     flex-wrap: wrap;
+    list-style: none;
   }
 
-  .advantages__item--fast5,
-  .advantages__item--fast6,
-  .advantages__item--fast7 {
+  .qualities-list__item--five,
+  .qualities-list__item--six,
+  .qualities-list__item--seven {
     width: 256px;
     order: 2;
-  }
-
-  ol.wrapper1 {
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;
-    margin: 0 auto;
-  }
-
-  .divide {
-    display: none;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .advantages__list {
+  .qualities-list {
     display: flex;
     flex-wrap: wrap;
   }
 
-  .advantages__item--fast1,
-  .advantages__item--fast3 {
+  .qualities-list__item--one,
+  .qualities-list__item--three {
     width: 400px;
   }
 
-  .advantages__item--fast3 {
+  .qualities-list__item--three {
     order: 2;
   }
 
-  .advantages__item--fast2 {
+  .qualities-list__item--two {
     background-image: url("../img/main-city-desktop@1x.jpg");
     background-repeat: no-repeat;
     width: 800px;
   }
 
-  .advantages__item--fast4 {
+  .qualities-list__item--four {
     background-image: url("../img/main-bridge-desktop@1x.jpg");
     background-repeat: no-repeat;
     width: 800px;
     margin: 0;
   }
 
-  .advantages__item--fast5,
-  .advantages__item--fast6,
-  .advantages__item--fast7 {
+  .qualities-list__item--five,
+  .qualities-list__item--six,
+  .qualities-list__item--seven {
     order: 2;
     width: 400px;
-  }
-
-  ol.wrapper1 {
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;
-    margin: 0 auto;
   }
 }

@@ -3,13 +3,17 @@
   flex-direction: column;
 }
 
-.page-header__logo-image {
+.page-header__image {
   position: reletive;
 }
 
+.page-header__svg {
+  margin-right: 0;
+}
+
 @media (min-width: @tablet-width) {
-  .page-header svg,
-  button.main-nav__toggle {
+  .page-header__svg,
+  .page-header__btn {
     display: none;
   }
 
@@ -20,8 +24,8 @@
 }
 
 @media (min-width: @desktop-width) {
-  .page-header svg,
-  button.main-nav {
+  .page-header__svg,
+  .page-header__btn {
     display: none;
   }
 
