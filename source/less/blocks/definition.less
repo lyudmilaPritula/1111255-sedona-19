@@ -3,14 +3,29 @@
   line-height: 24px;
 }
 
+@media (min-width: @tablet-width) {
+  .definition {
+    text-align: center;
+    width: 435px;
+    margin: 0 auto;
+  }
+}
 
-.definition h1 {
+@media (min-width: @desktop-width) {
+  .definition {
+    text-align: center;
+  }
+}
+
+.definiton__title {
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
+  text-align: center;
 }
 
 .definition__text {
   font-size: 14px;
   font-weight: 400;
+  text-align: center;
 }

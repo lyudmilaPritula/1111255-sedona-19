@@ -1,0 +1,36 @@
+.option-list--wrapper {
+  list-style: none;
+  padding: 0;
+}
+
+.option-list__title {
+  color: #333333;
+  font-size: 21px;
+  line-height: 15px;
+}
+
+.option-list__item {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+@media (min-width: @tablet-width) {
+  .option-list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 256px;
+  }
+
+  .option-list--wrapper {
+    width: 768px;
+    display: flex;
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .option-list {
+    display: flex;
+  }
+}

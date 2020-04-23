@@ -1,0 +1,36 @@
+.page-header {
+  display: flex;
+  flex-direction: column;
+}
+
+.page-header__image {
+  position: reletive;
+}
+
+.page-header__svg {
+  margin-right: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .page-header__svg,
+  .page-header__btn {
+    display: none;
+  }
+
+  .page-header__logo {
+    position: absolute;
+    left: 300px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header__svg,
+  .page-header__btn {
+    display: none;
+  }
+
+  .page-header__logo {
+    position: absolute;
+    left: 560px;
+  }
+}

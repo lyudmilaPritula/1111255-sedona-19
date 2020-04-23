@@ -1,0 +1,58 @@
+.album {
+  font-weight: bold;
+}
+
+.album__author {
+  color: #333333;
+  text-transform: none;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.album__like {
+  text-decoration: none;
+}
+
+.album__tablet,
+.album__tablet--row,
+.album__desktop {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .album__tablet {
+    display: block;
+    width: 326px;
+  }
+
+  .album__tablet--row {
+    order: 2;
+    display: block;
+    width: 326px;
+  }
+
+  .album__mobile,
+  .album__desktop {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .album {
+    margin: 0;
+    padding: 0;
+  }
+
+  .album__desktop {
+    width: 400px;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .album__mobile,
+  .album__tablet,
+  .album__tablet--row {
+    display: none;
+  }
+}
