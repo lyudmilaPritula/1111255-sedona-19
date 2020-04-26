@@ -4,6 +4,16 @@
   min-height: 390px;
 }
 
+.first-header__index {
+  padding-top: 90px;
+  width: 280px;
+  padding-left: 20px;
+}
+
+.first-header__sedona {
+  display: none;
+}
+
 @media (min-width: @tablet-width) {
   .first-header {
     background-image: url("../img/bg-back-tablet@1x.jpg");
@@ -11,6 +21,18 @@
     min-height: 520px;
     width: 100%;
     background-size: cover;
+    margin-top: -27px;
+  }
+
+  .first-header__index {
+    display: block;
+    width: 458px;
+    padding-top: 75px;
+    padding-left: 155px;
+  }
+
+  .first-header__sedona {
+    display: none;
   }
 }
 
@@ -21,5 +43,12 @@
     min-height: 520px;
     width: 100%;
     background-size: cover;
+    margin-top: -40px;
+  }
+
+  .first-header__index {
+    width: 460px;
+    padding-left: 409px;
+    padding-top: 80px;
   }
 }
