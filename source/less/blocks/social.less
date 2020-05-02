@@ -1,14 +1,30 @@
 .social__list {
-  min-width: 260px;
+  min-width: 280px;
   list-style: none;
+  padding-left: 78px;
+  padding-top: 24px;
+  flex-grow: 1;
 }
 
 .social__link--twitter,
 .social__link--facebook,
 .social__link--youtube {
   background-color: #81b3d2;
-  padding: 15px;
+  padding: 12px;
   border: 1px solid #81b3d2;
   margin-right: 6px;
   text-decoration: none;
+}
+
+@media (min-width: @tablet-width) {
+  .social__list {
+    padding-top: 54px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .social__list {
+    padding-top: 69px;
+    margin-left: -89px;
+  }
 }

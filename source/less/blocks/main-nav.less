@@ -3,12 +3,6 @@
 }
 
 @media (min-width: @tablet-width) {
-  .main-nav--wrapper {
-    width: 768px;
-    min-height: 55px;
-    margin: 0;
-  }
-
   .main-nav__list {
     display: flex;
     flex-wrap: wrap;
@@ -18,10 +12,13 @@
   }
 }
 
-@media (min-width: @desktop-width) {
-  .main-nav--wrapper {
-    width: 1200px;
-    margin: auto;
-    background-color: #ffffff;
+@media (min-width: @tablet-width) {
+  .main-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
   }
 }

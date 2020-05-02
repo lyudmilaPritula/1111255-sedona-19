@@ -4,26 +4,50 @@
   margin: 0;
 }
 
-.qualities-list__number {
+.qualities-list__title {
+  margin: 0;
+}
+
+.qualities-list__number--three {
   font-size: 14px;
   line-height: 21px;
   padding-left: 135px;
+  margin-top: 9px;
 }
 
 .qualities-list__description {
-  padding-left: 18px;
-  padding-right: 18px;
-  margin-top: -3px;
-  font-size: 15px;
+  font-size: 14px;
   text-align: center;
-  line-height: 25px;
+  line-height: 21px;
+  padding-left: 23px;
+  padding-right: 23px;
 }
 
 .qualities-list__item--one,
 .qualities-list__item--three {
   background-color: #81b3d2;
   color: #ffffff;
-  min-height: 192px;
+  min-height: 196px;
+}
+
+.qualities-list__item--one {
+  min-height: 214px;
+}
+
+.qualities-list__title--one {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+  padding-top: 61px;
+  padding-left: 67px;
+  line-height: 26px;
+}
+
+.qualities-list__number--one {
+  padding-left: 134px;
+  font-size: 14px;
+  margin-top: 9px;
+  line-height: 21px;
 }
 
 .qualities-list--wrapper {
@@ -31,12 +55,14 @@
   padding: 0;
 }
 
-.qualities-list__title {
+.qualities-list__title--three {
+  margin: 0;
   font-size: 18px;
-  line-height: 10px;
   font-weight: bold;
-  padding-top: 50px;
-  padding-left: 66px;
+  padding-top: 39px;
+  padding-left: 54px;
+  line-height: 26px;
+  letter-spacing: 0.03em;
 }
 
 .qualities-list__item--two {
@@ -46,20 +72,73 @@
   min-height: 260px;
 }
 
+.qualities-list__item--three {
+  min-height: 191px;
+}
+
 .qualities-list__item--four {
-  background-image: url("../img/photo-bridge-mobile@1x.jpg");
+  background-image: url("../img/main-bridge-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 260px;
+  min-height: 261px;
 }
 
 .qualities-list__item--five,
 .qualities-list__item--six,
 .qualities-list__item--seven {
   background-color: #eeeeee;
-  min-height: 267px;
+  min-height: 158px;
+  text-align: center;
   padding: 0;
   margin: 0;
+}
+
+.qualities-list__number--five {
+  margin-top: 13px;
+}
+
+.qualities-list__title--five {
+  margin: 0;
+  padding-top: 28px;
+  text-align: center;
+  line-height: 21px;
+  padding-left: 21px;
+  padding-right: 19px;
+}
+
+.qualities-list__title--six {
+  padding-top: 10px;
+}
+
+.qualities-list__number--six {
+  margin-top: -7px;
+}
+
+.qualities-list__description--six {
+  padding-left: 41px;
+  padding-top: 4px;
+  padding-right: 40px;
+}
+
+
+.qualities-list__item--seven {
+  min-height: 137px;
+}
+
+.qualities-list__title--seven {
+  margin-top: 29px;
+}
+
+.qualities-list__number--seven {
+  margin-top: -8px;
+}
+
+.qualities-list__description--seven {
+  margin-top: 19px;
+  line-height: 21px;
+  font-size: 14px;
+  padding-left: 34px;
+  padding-right: 33px;
 }
 
 @media (min-width: @tablet-width) {
@@ -78,10 +157,44 @@
     padding-left: 35px;
   }
 
-  .qualities-list__number {
+  .qualities-list__title--three {
+    margin: 0;
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: bold;
+    padding-top: 41px;
+    padding-left: 1px;
+  }
+
+  .qualities-list__title--five,
+  .qualities-list__title--six,
+  .qualities-list__title--seven {
+    margin: 0;
+    font-size: 21px;
+    padding-top: 43px;
+    text-align: center;
+    line-height: 26px;
+  }
+
+  .qualities-list__title--six,
+  .qualities-list__title--seven {
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-bottom: 23px;
+  }
+
+  .qualities-list__number--one {
     font-size: 14px;
     line-height: 21px;
-    padding-left: 105px;
+    padding-left: 103px;
+    margin-top: -9px;
+  }
+
+  .qualities-list__number--three {
+    font-size: 14px;
+    line-height: 21px;
+    margin-top: 10px;
+    padding-left: 2px;
   }
 
   .qualities-list__description {
@@ -89,6 +202,7 @@
     line-height: 21px;
     padding-left: 45px;
     padding-right: 45px;
+    padding-top: 5px;
   }
 
   .qualities-list__item--three {
@@ -119,7 +233,18 @@
   .qualities-list__item--six,
   .qualities-list__item--seven {
     width: 256px;
-    order: 2;
+  }
+
+  .qualities-list__title--one {
+    font-size: 21px;
+    padding: 20px;
+    padding-top: 47px;
+    text-align: center;
+    line-height: 26px;
+  }
+
+  .divide--seven {
+    display: none;
   }
 }
 
@@ -132,6 +257,13 @@
   .qualities-list--wrapper {
     width: 1200px;
     margin-left: 39px;
+  }
+
+  .qualities-list__number--one {
+    font-size: 14px;
+    line-height: 21px;
+    padding-left: 175px;
+    margin-top: 11px;
   }
 
   .qualities-list__item--one,
@@ -156,6 +288,18 @@
     margin: 0;
   }
 
+  .qualities-list__title--five,
+  .qualities-list__title--six,
+  .qualities-list__title--seven {
+    margin: 0;
+    width: 130px;
+    padding-left: 134px;
+    font-size: 21px;
+    padding-top: 43px;
+    text-align: center;
+    line-height: 26px;
+  }
+
   .qualities-list__item--five,
   .qualities-list__item--six,
   .qualities-list__item--seven {
@@ -163,13 +307,22 @@
     width: 400px;
   }
 
-  .qualities-list__title {
+  .qualities-list__title--one {
     text-align: center;
     padding: 0;
     width: 183px;
     font-size: 21px;
     line-height: 26px;
-    padding-top: 24px;
-    padding-left: 114px;
+    padding-top: 55px;
+    padding-left: 110px;
+  }
+
+  .qualities-list__title--three {
+    margin: 0;
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: bold;
+    padding-top: 57px;
+    padding-left: 1px;
   }
 }

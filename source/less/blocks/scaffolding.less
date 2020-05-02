@@ -22,14 +22,35 @@ img {
   overflow: hidden;
 }
 
+.wrapper {
+  min-width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+
 @media (min-width: @tablet-width) {
-  body {
+  .wrapper {
     min-width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 }
 
 @media (min-width: @desktop-width) {
-  body {
+  .wrapper {
     min-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 }

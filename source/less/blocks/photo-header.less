@@ -1,7 +1,14 @@
 .photo-header {
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
-  min-height: 300px;
+  min-height: 156px;
+  margin-top: -29px;
+}
+
+.photo-header__title--svg {
+  width: 70%;
+  padding-left: 47px;
+  padding-top: 51px;
 }
 
 @media (min-width: @tablet-width) {
@@ -11,6 +18,13 @@
     background-size: cover;
     min-height: 300px;
   }
+
+  .photo-header__title--svg {
+    width: 60%;
+    text-align: center;
+    padding-left: 156px;
+    padding-top: 96px;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -19,5 +33,16 @@
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 300px;
+  }
+
+  .photo-header__title--svg {
+    width: 460px;
+    padding-top: 91px;
+    padding-left: 410px;
+  }
+
+  .definiton__title--photo {
+    padding-top: 71px;
+    margin-left: -27px;
   }
 }

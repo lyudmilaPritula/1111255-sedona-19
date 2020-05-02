@@ -2,22 +2,27 @@
   font-size: 21px;
   line-height: 26px;
   color: #000000;
+  text-align: center;
 }
 
 @media (min-width: @tablet-width) {
-  .page-footer--wrapper {
+  .page-footer__tag {
     display: flex;
-    width: 650px;
-    margin: 0 auto;
-    justify-content: space-between;
+    flex-direction: row;
+    padding-left: 60px;
+    flex-wrap: wrap;
+    padding-top: 50px;
+    padding-right: 33px;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .page-footer--wrapper {
+  .page-footer__tag {
     display: flex;
-    width: 1035px;
-    margin: auto;
-    justify-content: space-between;
+    flex-direction: row;
+    padding-left: 58px;
+    flex-wrap: wrap;
+    padding-top: 63px;
+    padding-right: 33px;
   }
 }

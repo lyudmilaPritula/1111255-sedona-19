@@ -2,12 +2,23 @@
   font-weight: bold;
 }
 
+.album__mobile {
+  padding-top: 27px;
+}
+
+.album__card {
+  margin: 0;
+  padding-top: 15px;
+  line-height: 10px;
+}
+
 .album__author {
   color: #333333;
   text-transform: none;
   font-size: 14px;
   line-height: 24px;
   font-weight: 400;
+  margin-bottom: 0;
 }
 
 .album__like {
@@ -20,20 +31,29 @@
   display: none;
 }
 
+.album__mobile--one {
+  padding-top: 45px;
+}
+
 @media (min-width: @tablet-width) {
   .album__tablet {
     display: block;
     width: 326px;
+    margin-left: 36px;
+    margin-top: -12px;
   }
 
   .album__tablet--row {
     order: 2;
     display: block;
     width: 326px;
+    margin-left: 1px;
+    margin-top: -12px;
   }
 
   .album__mobile,
-  .album__desktop {
+  .album__desktop,
+  .album__mobile--one {
     display: none;
   }
 }
