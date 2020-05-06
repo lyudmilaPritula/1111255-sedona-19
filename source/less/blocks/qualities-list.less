@@ -8,19 +8,13 @@
   margin: 0;
 }
 
-.qualities-list__number--three {
-  font-size: 14px;
-  line-height: 21px;
-  padding-left: 135px;
-  margin-top: 9px;
-}
-
 .qualities-list__description {
   font-size: 14px;
   text-align: center;
   line-height: 21px;
-  padding-left: 23px;
-  padding-right: 23px;
+  width: 270px;
+  margin: auto;
+  margin-bottom: 46px;
 }
 
 .qualities-list__item--one,
@@ -34,35 +28,36 @@
   min-height: 214px;
 }
 
-.qualities-list__title--one {
-  margin: 0;
+.qualities-list__title--one,
+.qualities-list__title--three {
   font-size: 18px;
   font-weight: bold;
-  padding-top: 61px;
-  padding-left: 67px;
   line-height: 26px;
+  margin: auto;
+  text-align: center;
+  padding-top: 40px;
 }
 
-.qualities-list__number--one {
-  padding-left: 134px;
+.qualities-list__number--one,
+.qualities-list__number--three {
   font-size: 14px;
-  margin-top: 9px;
   line-height: 21px;
+  text-align: center;
+  margin-bottom: 22px;
+  margin-top: 22px;
+  padding: 0;
+}
+
+.qualities-list__number--five,
+.qualities-list__number--six,
+.qualities-list__number--seven {
+  margin-bottom: 22px;
+  margin-top: 22px;
 }
 
 .qualities-list--wrapper {
   margin: 0;
   padding: 0;
-}
-
-.qualities-list__title--three {
-  margin: 0;
-  font-size: 18px;
-  font-weight: bold;
-  padding-top: 39px;
-  padding-left: 54px;
-  line-height: 26px;
-  letter-spacing: 0.03em;
 }
 
 .qualities-list__item--two {
@@ -87,10 +82,10 @@
 .qualities-list__item--six,
 .qualities-list__item--seven {
   background-color: #eeeeee;
-  min-height: 158px;
   text-align: center;
   padding: 0;
   margin: 0;
+  margin-bottom: 33px;
 }
 
 .qualities-list__number--five {
@@ -110,35 +105,11 @@
   padding-top: 10px;
 }
 
-.qualities-list__number--six {
-  margin-top: -7px;
-}
-
-.qualities-list__description--six {
-  padding-left: 41px;
-  padding-top: 4px;
-  padding-right: 40px;
-}
-
-
-.qualities-list__item--seven {
-  min-height: 137px;
-}
-
-.qualities-list__title--seven {
-  margin-top: 29px;
-}
-
-.qualities-list__number--seven {
-  margin-top: -8px;
-}
-
 .qualities-list__description--seven {
-  margin-top: 19px;
+  margin-top: 22px;
   line-height: 21px;
   font-size: 14px;
-  padding-left: 34px;
-  padding-right: 33px;
+  padding-bottom: 33px;
 }
 
 @media (min-width: @tablet-width) {
@@ -158,51 +129,36 @@
   }
 
   .qualities-list__title--three {
-    margin: 0;
     font-size: 21px;
     line-height: 26px;
     font-weight: bold;
-    padding-top: 41px;
-    padding-left: 1px;
+    width: 158px;
+    margin: auto;
   }
 
   .qualities-list__title--five,
   .qualities-list__title--six,
   .qualities-list__title--seven {
-    margin: 0;
     font-size: 21px;
-    padding-top: 43px;
     text-align: center;
     line-height: 26px;
-  }
-
-  .qualities-list__title--six,
-  .qualities-list__title--seven {
-    padding-right: 50px;
-    padding-left: 50px;
-    padding-bottom: 23px;
+    width: 110px;
+    margin: auto;
+    padding: 0;
   }
 
   .qualities-list__number--one {
     font-size: 14px;
     line-height: 21px;
-    padding-left: 103px;
-    margin-top: -9px;
   }
 
-  .qualities-list__number--three {
+  .qualities-list__description,
+  .qualities-list__description--six,
+  .qualities-list__description--seven {
     font-size: 14px;
     line-height: 21px;
-    margin-top: 10px;
-    padding-left: 2px;
-  }
-
-  .qualities-list__description {
-    font-size: 14px;
-    line-height: 21px;
-    padding-left: 45px;
-    padding-right: 45px;
-    padding-top: 5px;
+    width: 168px;
+    margin: auto;
   }
 
   .qualities-list__item--three {
@@ -252,18 +208,27 @@
   .qualities-list {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
   }
 
   .qualities-list--wrapper {
     width: 1200px;
-    margin-left: 39px;
+    margin: auto;
+  }
+
+  .qualities-list__description,
+  .qualities-list__description--six,
+  .qualities-list__description--seven {
+    margin: auto;
+    order: 3;
+    width: 300px;
   }
 
   .qualities-list__number--one {
     font-size: 14px;
     line-height: 21px;
-    padding-left: 175px;
-    margin-top: 11px;
+    margin: auto;
+    margin-left: 168px;
   }
 
   .qualities-list__item--one,
@@ -291,13 +256,11 @@
   .qualities-list__title--five,
   .qualities-list__title--six,
   .qualities-list__title--seven {
-    margin: 0;
     width: 130px;
-    padding-left: 134px;
     font-size: 21px;
-    padding-top: 43px;
     text-align: center;
     line-height: 26px;
+    margin: auto;
   }
 
   .qualities-list__item--five,
@@ -313,16 +276,19 @@
     width: 183px;
     font-size: 21px;
     line-height: 26px;
-    padding-top: 55px;
-    padding-left: 110px;
+    margin-top: 40px;
   }
 
   .qualities-list__title--three {
-    margin: 0;
     font-size: 21px;
     line-height: 26px;
     font-weight: bold;
-    padding-top: 57px;
-    padding-left: 1px;
+    width: 140px;
+    margin: auto;
+  }
+
+  .qualities-list__number--three {
+    width: 168px;
+    margin: auto;
   }
 }

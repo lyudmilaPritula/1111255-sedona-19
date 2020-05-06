@@ -1,9 +1,12 @@
-.social__list {
-  min-width: 280px;
+.social {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   list-style: none;
-  padding-left: 78px;
-  padding-top: 24px;
-  flex-grow: 1;
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
 }
 
 .social__link--twitter,
@@ -14,17 +17,4 @@
   border: 1px solid #81b3d2;
   margin-right: 6px;
   text-decoration: none;
-}
-
-@media (min-width: @tablet-width) {
-  .social__list {
-    padding-top: 54px;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .social__list {
-    padding-top: 69px;
-    margin-left: -89px;
-  }
 }
