@@ -9,21 +9,25 @@
 }
 
 .page-header__cross {
-  margin-right: 0;
   position: absolute;
-  left: 278px;
-  margin-top: -30px;
+  right: 10px;
+  top: 10px;
 }
 
 .page-header__burger {
-  margin-top: 15px;
-  margin-left: 276px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.page-header__logo {
+  display: flex;
+  justify-content: center;
 }
 
 .page-header__image--mobile {
-  order: 3;
-  margin-top: -57px;
-  padding-left: 110px;
+  right: 109px;
+  position: absolute;
 }
 
 @media (min-width: @tablet-width) {
@@ -38,7 +42,6 @@
   .page-header__image--tablet {
     display: block;
     z-index: 10;
-    margin-top: -5px;
   }
 }
 
