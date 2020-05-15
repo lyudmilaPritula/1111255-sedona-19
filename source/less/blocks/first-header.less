@@ -1,18 +1,19 @@
 .first-header {
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
-  padding-top: 90px;
-  min-height: 298px;
+  min-height: 390px;
   clip-path: polygon(50% 0%, 100% 0, 100% 93%, 50% 100%, 0 93%, 0 0);
+  position: relative;
 }
 
 .first-header__index {
   display: flex;
   justify-content: center;
-  align-items: center;
   width: 280px;
-  margin-left: auto;
-  margin-right: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .first-header__sedona {

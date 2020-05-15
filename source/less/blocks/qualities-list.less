@@ -4,42 +4,48 @@
   margin: 0;
 }
 
+.qualities-list__item {
+  text-align: center;
+  color: #ffffff;
+  padding-top: 56px;
+  min-height: 150px;
+}
+
 .qualities-list__title {
-  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+  margin: auto;
+  text-align: center;
 }
 
 .qualities-list__description {
   font-size: 14px;
   text-align: center;
   line-height: 21px;
-  width: 270px;
+  width: 83%;
   margin: auto;
+}
+
+.qualities-list__photo {
+  min-height: 260px;
 }
 
 .qualities-list__item--one,
 .qualities-list__item--three {
   background-color: #81b3d2;
-  color: #ffffff;
+}
+
+.qualities-list__item--three {
+  min-height: 135px;
+  margin: 0;
 }
 
 .qualities-list__item--one {
-  padding-top: 59px;
-  text-align: center;
-  padding-bottom: 40px;
-}
-
-
-.qualities-list__title--one,
-.qualities-list__title--three {
-  font-size: 18px;
-  font-weight: bold;
-  margin: auto;
-  text-align: center;
-  padding-bottom: 10px;
+  clip-path: polygon(50% 6%, 100% 0, 100% 100%, 50% 100%, 0 100%, 0 0);
 }
 
 .qualities-list__title--three {
-  padding-top: 42px;
+  margin-top: -15px;
 }
 
 .qualities-list__number--one,
@@ -50,40 +56,24 @@
 }
 
 .qualities-list__number--three {
-  margin-left: 136px;
-}
-
-.qualities-list--wrapper {
   margin: 0;
-  padding: 0;
-  clip-path: polygon(50% 3%, 100% 0, 100% 100%, 50% 100%, 0 100%, 0 0);
+  margin-top: -5px;
+  margin-bottom: 10px;
 }
 
-.qualities-list__item--two {
+.qualities-list__photo--two {
   background-image: url("../img/main-city-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 260px;
 }
 
-.qualities-list__item--three {
-  min-height: 191px;
-}
-
-.qualities-list__item--four {
+.qualities-list__photo--four {
   background-image: url("../img/main-bridge-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 261px;
 }
 
-.qualities-list__item--five {
-  background-color: #eeeeee;
-  text-align: center;
-  padding: 0;
-  margin: 0;
-  padding-bottom: 29px;
-  padding-top: 29px;
+.qualities-list__item--five,
+.qualities-list__item--six,
+.qualities-list__item--seven {
+  color: #333333;
+  padding-top: 25px;
 }
 
 .qualities-list__title--five {
@@ -99,32 +89,19 @@
 
 .qualities-list__item--six {
   background-color: #eeeeee;
-  text-align: center;
-  padding: 0;
-  margin: 0;
-  padding-top: 27px;
-  padding-bottom: 36px;
 }
 
 .qualities-list__title--six {
   margin-bottom: 14px;
 }
 
-.qualities-list__number--six {
-  margin-top: 5px;
-}
-
 .qualities-list__description--six {
-  font-size: 14px;
-  line-height: 21px;
-  padding-top: 16px;
-  padding-left: 30px;
-  padding-right: 30px;
+  width: 80%;
 }
 
 .qualities-list__item--seven {
-  text-align: center;
-  padding-top: 21px;
+  min-height: 130px;
+  padding-top: 13px;
 }
 
 .qualities-list__title--seven {
@@ -132,12 +109,12 @@
 }
 
 .qualities-list__description--seven {
-  margin-top: 18px;
-  line-height: 21px;
-  font-size: 14px;
-  padding-left: 30px;
-  padding-right: 33px;
-  margin-bottom: 26px;
+  margin-top: 17px;
+  width: 80%;
+}
+
+.qualities-list__number--seven {
+  margin: 0;
 }
 
 @media (min-width: @tablet-width) {

@@ -3,14 +3,9 @@
   flex-direction: column;
 }
 
-.page-header__logo--tablet,
-.page-header__logo--desktop {
-  display: none;
-}
-
 .page-header__cross {
   position: absolute;
-  right: 21px;
+  right: 20px;
   top: 16px;
 }
 
@@ -26,9 +21,15 @@
 }
 
 .page-header__logo--mobile {
-  right: 109px;
+  right: 50%;
   position: absolute;
   z-index: 3;
+  transform: translateX(50%);
+}
+
+.page-header__logo--tablet,
+.page-header__logo--desktop {
+  display: none;
 }
 
 @media (min-width: @tablet-width) {
