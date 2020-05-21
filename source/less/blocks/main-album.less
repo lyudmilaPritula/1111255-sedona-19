@@ -1,7 +1,6 @@
 .main-album {
-  display: block;
-  margin: 0 auto;
-  padding-left: 22px;
+  text-align: center;
+  padding-top: 13px;
 }
 
 .main-album__mobile {
@@ -17,14 +16,35 @@
   font-size: 14px;
   line-height: 24px;
   margin: 0;
-  padding-top: 10px;
+  text-align: initial;
+  margin-left: 19px;
 }
 
 .main-album__author {
   text-transform: capitalize;
   margin: 0;
-  padding-top: 2px;
-  padding-bottom: 10px;
+  text-align: initial;
+  margin-left: 19px;
+  line-height: 24px;
+  letter-spacing: -1px;
+  margin-bottom: 7px;
+}
+
+.main-album__row {
+  padding-top: 15px;
+}
+
+.main-album__like {
+  display: block;
+  text-align: initial;
+  margin-left: 19px;
+  text-decoration: none;
+  color: #333333;
+  margin-bottom: 21px;
+}
+
+.main-album__svg {
+  text-align: initial;
 }
 
 @media (min-width: @tablet-width) {
@@ -61,13 +81,10 @@
   }
 
   .main-album__row--one {
-    background-color: #f2f2f2;
     width: 325px;
-    margin-left: 37px;
   }
 
   .main-album__row--two {
-    background-color: #f2f2f2;
     width: 325px;
     margin-left: 1px;
   }
