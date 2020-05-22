@@ -89,35 +89,39 @@
     <hr class="yourself__divite">
     <section class="impression">
       <h3 class="impression__title">Ваше общее впечатление:</h3>
-      <input type="radio" class="impression__input" ><label class="impression__radio" for="">Скорее положительное </label>
+      <p class="impression__row"><input type="radio" id="plus" class="impression__input" ><label class="impression__radio" for="plus">Скорее положительное </label></p>
 
-      <label class="impression__radio" for=""><input type="radio" class="">Скорее отрицательное</label>
-      <label class="impression__radio" for=""><input type="radio" class="">Затрудняюсь ответить </label>
+      <p class="impression__row"><input type="radio" id="minus" class="impression__input"><label class="impression__radio" for="minus">Скорее отрицательное</label></p>
+      <p class="impression__row"><input type="radio" id="none" class="impression__input"><label class="impression__radio" for="none">Затрудняюсь ответить </label></p>
     </section>
     <hr>
     <section class="attractions">
       <h3 class="attractions__title">Посещенные достопримечательности:</h3>
-      <label class="attractions__checkbox" for="">
-        <input type="checkbox" checked="checked">
+      <p class="arrractions__row">
+        <input type="checkbox" class="custom" id="bridge">
+        <label class="attractions__checkbox" for="bridge"></label>
         <span class="checkmark"></span>Мост Дьявола
-      </label>
-      <label class="attractions__checkbox" for="">
-        <input type="checkbox" checked="checked">
+      </p>
+      <p class="arrractions__row">
+        <input type="checkbox" class="custom" id="mountain">
+        <label class="attractions__checkbox" for="mountain"></label>
         <span class="checkmark"></span>Гора-Колокол
-      </label>
-      <label class="attractions__checkbox" for="">
-        <input type="checkbox" checked="checked">
+      </p>
+      <p class="arrractions__row">
+        <input type="checkbox" class="custom" id="park" >
+        <label class="attractions__checkbox" for="park"></label>
         <span class="checkmark"></span>Слайд-парк
-      </label>
-      <label class="attractions__checkbox" for="">
-        <input type="checkbox">
+      </p>
+      <p class="arrractions__row">
+        <input type="checkbox" class="custom" id="rock">
+        <label class="attractions__checkbox" for="rock"></label>
         <span class="checkmark"></span>Красные скалы
-      </label>
+      </p>
     </section>
     <hr>
     <section class="emotions">
       <h3 class="emotions__title">Опишите свои эмоции:</h3>
-      <textarea name="emotions__review" id="" cols="30" rows="10">Опишите подробно все свои восторги</textarea>
+      <textarea class="emotions__review" name="emotions__review" id="" cols="30" rows="10" placeholder="Опишите подробно все свои восторги"></textarea>
       <a class="emotions__btn" href="">Отправить отзыв</a>
     </section>
 
